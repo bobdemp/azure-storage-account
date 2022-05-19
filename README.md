@@ -2,6 +2,14 @@
 Information on Azure Blob Storage
 
 -------
+Video
+-------
+
+AZ-900 Episode 11 | Azure Storage Services | Blob, Queue, Table, Files, Disk and Storage Tiers
+
+https://www.youtube.com/watch?v=_Qlkvd4ZQuo
+
+-------
 What is the structure of Blob?
 -------
 

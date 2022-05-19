@@ -40,3 +40,15 @@ Here is a quick graph to help picture how the access tiers are utilized:
 ![image](https://user-images.githubusercontent.com/38502893/169266415-27757d07-15f5-44e6-a413-58ca9711d63d.png)
 
 The Y axis is how often the data needs to be accessed, while the X axis represents the length of time the data needs to be retained. The 'Hot' access tier is accessed often but is not required to be static very long, while the 'Cool' tier is not expected to be accessed often but is expected to remain available for 30-180 days, and finally the 'Archive' tier is not expected to be accessed outside of an anomaly.
+
+-------
+Flat listing versus hierarchical listing
+-------
+
+https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-list?tabs=dotnet#flat-listing-versus-hierarchical-listing
+
+Blobs in Azure Storage are organized in a flat paradigm, rather than a hierarchical paradigm (like a classic file system). However, you can organize blobs into virtual directories in order to mimic a folder structure. A virtual directory forms part of the name of the blob and is indicated by the delimiter character.
+
+To organize blobs into virtual directories, use a delimiter character in the blob name. The default delimiter character is a forward slash (/), but you can specify any character as the delimiter.
+
+If you name your blobs using a delimiter, then you can choose to list blobs hierarchically. For a hierarchical listing operation, Azure Storage returns any virtual directories and blobs beneath the parent object. You can call the listing operation recursively to traverse the hierarchy, similar to how you would traverse a classic file system programmatically.
